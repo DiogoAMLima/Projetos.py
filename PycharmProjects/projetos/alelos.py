@@ -1,4 +1,3 @@
-# Corrigir a parte final do código
 print("Alelos podem ser dominantes ou recessivos.\n")
 print("Alelo Dominante = Alelo que sozinho consegue expressar alguma característica.\n")
 print("Alelo Recessivo = Alelo que só expressa-se uma característica aos pares.\n")
