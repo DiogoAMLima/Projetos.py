@@ -28,6 +28,8 @@ print("Exemplo para cor dos olhos a seguir...\n")
 print("Alelo recessivo para olhos azuis: aa\n")
 print("Vamos ver a probabilidade de você e o indivíduo com os alelos citados acima "
       "terem um filho(a) com olhos azuis (aa)... \n")
+print("Caso os alelos do primeiro e segundo indíviduos sejam diferentes de AA ou Aa ou aa, não será possível ver a"
+      " probabilidade... ")
 try:
     if alelo1 == 'AA' and alelo2 == 'AA':
         print("Chance de terem um filho com olhos azuis = 0%")
