@@ -4,30 +4,24 @@ print("Alelo Recessivo = Alelo que só expressa-se uma característica aos pares
 print("Para exemplos, podemos ter AA,Aa,aa\n")
 print("Informe seus alelos: ")
 alelo1: str = str(input())
-try:
-    if alelo1 == 'AA':
-        print("Homozigoto")
-    else:
-        if alelo1 == 'Aa':
-            print("Heterozigoto")
-        else:
-            if alelo1 == 'aa':
-                print('Homozigoto')
-except ValueError:
+if alelo1 == 'AA':
+    print("Homozigoto")
+if alelo1 == 'Aa':
+    print("Heterozigoto")
+if alelo1 == 'aa':
+    print('Homozigoto')
+else:
     print("Isto não é um alelo...")
 print(f'Seus alelos são: {alelo1}')
 print("Informe os alelos de outro indivíduo: ")
 alelo2: str = str(input())
-try:
-    if alelo2 == 'AA':
-        print("Homozigoto")
-    else:
-        if alelo2 == 'Aa':
-            print("Heterozigoto")
-        else:
-            if alelo2 == 'aa':
-                print('Homozigoto')
-except ValueError:
+if alelo2 == 'AA':
+    print("Homozigoto")
+if alelo2 == 'Aa':
+    print("Heterozigoto")
+if alelo2 == 'aa':
+    print('Homozigoto')
+else:
     print("Isto não é um alelo...")
 print(f'Os alelos deste indivíduo são: {alelo2}\n')
 print("Exemplo para cor dos olhos a seguir...\n")
