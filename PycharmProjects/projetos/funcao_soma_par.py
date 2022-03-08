@@ -1,4 +1,4 @@
-def soma_pares(vetor):
+def soma_pares(vetor1):
     soma_par = 0
     for num in vetor:
         if num % 2 == 0:
