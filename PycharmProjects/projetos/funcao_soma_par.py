@@ -1,6 +1,6 @@
 def soma_pares(vetor1):
     soma_par = 0
-    for num in vetor:
+    for num in vetor1:
         if num % 2 == 0:
             soma_par = soma_par + num
     return soma_par
