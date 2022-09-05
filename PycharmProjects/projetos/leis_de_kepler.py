@@ -52,11 +52,14 @@ print('Perifélio -> é o ponto da órbita em que um planeta ou um corpo menor e
 
 
 def raio_medio():
-    rmax = float(input('Informe o raio máximo: '))
-    rmin = float(input('Informe o raio mínimo: '))
-    r = ((rmax + rmin) / 2)
-    print(f'O Afélio que é = \033[36m{rmax}\033[m + Perifélio que é = \033[35m{rmin}\033[m, '
-          f'teremos o raio médio = \033[33m{r}\033[m')
+    try:
+        rmax = float(input('Informe o raio máximo: '))
+        rmin = float(input('Informe o raio mínimo: '))
+        r = ((rmax + rmin) / 2)
+        print(f'O Afélio que é = \033[36m{rmax}\033[m + Perifélio que é = \033[35m{rmin}\033[m, '
+              f'teremos o raio médio = \033[33m{r}\033[m')
+    except ValueError:
+        print('\n\033[31mErro de tipo, tente novamente...\033[m')
 
 
 raio_medio()
@@ -81,12 +84,15 @@ print(abs(6.67 * (10 ** (-11))) * abs(1.989 * (10 ** 30)) * abs(2 * (10 ** 5)) /
 
 
 def lgu():
-    R: float = float(input('\nInforme o valor de R: '))
-    m: float = float(input('Informe a massa do planeta: '))
+    try:
+        R: float = float(input('\nInforme o valor de R: '))
+        m: float = float(input('Informe a massa do planeta: '))
 
-    F = abs(G * (abs(M * m)) / abs(R * R))
+        F = abs(G * (abs(M * m)) / abs(R * R))
 
-    print(f'\nA força gravitacional é: \033[34m{F}\033[m')
+        print(f'\nA força gravitacional é: \033[34m{F}\033[m')
+    except ValueError:
+        print('\n\033[31mErro de tipo, tente novamente...\033[m')
 
 
 lgu()
