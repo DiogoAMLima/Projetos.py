@@ -67,7 +67,7 @@ print(f'A(s) raíz(es) positiva(s) é/são: {posit}')
 
 print()
 
-print('Intervalo \033[31m(0,0) (2,3)\033[m contém uma raiz\n')
+print(f'Intervalo \033[31m(0,0) (2,3)\033[m contém {len(posit)} raize(s)\n')
 
 print('Estimativa para número de iterações necessário para calcular a menor raiz positiva possível'
       ' com precisão de \033[32m0,070\033[m')
