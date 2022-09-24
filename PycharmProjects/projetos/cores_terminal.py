@@ -1,8 +1,10 @@
 # Estilo: 0 = normal, 1 = negrito, 4 = sublinhado e 7 = inverter (negativo)
 
-# Texto: 30 = branco, 31 = vermelho, 32 = verde, 33 = amarelo, 34 = azul, 35 = roxo, 36 = azul piscina, 37 = cinza
+# Texto: 30 = preto, 31 = vermelho, 32 = verde, 33 = amarelo, 34 = azul, 35 = roxo, 36 = azul piscina, 37 = cinza,
+# 97 = branco
 
-# Fundo = 40 = branco, 41 = vermelho, 42 = verde, 43 = amarelo, 44 = azul, 45 = roxo, 46 = azul piscina, 47 = cinza
+# Fundo: 40 = preto, 41 = vermelho, 42 = verde, 43 = amarelo, 44 = azul, 45 = roxo, 46 = azul piscina, 47 = cinza,
+# branco = 107
 
 print('-------------------------------------CORES TERMINAL-------------------------------------\n')
 
@@ -29,3 +31,4 @@ print('O {}{}{} está em Azul!'.format('\033[1;34m', numero, '\033[m'))
 print('\n')
 
 print('-----------------------------------------------------------------------------------------')
+
