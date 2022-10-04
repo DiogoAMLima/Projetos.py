@@ -14,7 +14,7 @@ letra_maiuscula = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 juntando = num + caracteres_especiais + letra_minuscula + letra_maiuscula
 
 while True:
-    op = str(input('\nPara continuarmos o procedimento, pressione qualquer tecla ou s para sair... '))
+    op = str(input('\nPara continuarmos o procedimento, pressione qualquer tecla ou s para sair... ')).strip()
     if op == 's':
         print('\n\033[33mFinalizando...\033[m')
         break
