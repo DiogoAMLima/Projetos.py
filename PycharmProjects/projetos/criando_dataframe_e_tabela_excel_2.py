@@ -50,7 +50,7 @@ dados = {'Marcas': info1, 'Processadores': info2, 'Fontes': info3, 'Memória': i
 tabela = pd.DataFrame(data=dados)
 print(tabela)
 
-opcao = str(input('\nGostaria de criar uma tabela em Excel: [S/N]? ')).upper()
+opcao = str(input('\nGostaria de criar uma tabela em Excel: [S/N]? ')).strip().upper()
 if opcao not in 'S':
     print('\033[37mTudo bem, até a próxima...\033[m')
 else:
