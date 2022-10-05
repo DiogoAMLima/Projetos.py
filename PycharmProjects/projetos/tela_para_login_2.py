@@ -1,7 +1,5 @@
 from PySimpleGUI import PySimpleGUI as sg
 
-# https://www.geeksforgeeks.org/themes-in-pysimplegui/ Olhar código sobre os temas
-
 sg.theme('Dark')
 
 layout_temas = [
