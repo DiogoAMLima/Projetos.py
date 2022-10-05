@@ -48,6 +48,7 @@ if op in lista_nomes:
 
     # Window:
     janela = sg.Window('Tela de login', layout)
+    
     # Lendo os eventos:
 
     while True:
@@ -64,4 +65,4 @@ if op in lista_nomes:
                 print('\n\033[97mLogin ou senha inválidos...\033[m')
 else:
     print('\n\033[34mNão temos essa tema...\033[m')
-
+    
