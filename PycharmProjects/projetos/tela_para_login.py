@@ -1,7 +1,5 @@
 from PySimpleGUI import PySimpleGUI as sg
 
-# https://www.geeksforgeeks.org/themes-in-pysimplegui/ Olhar código sobre os temas
-
 # sg.theme_previewer()  # Visualizar os temas
 
 lista_nomes = sg.theme_list()  # Variável para mostrar todos os nomes
