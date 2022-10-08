@@ -68,4 +68,3 @@ while True:
     else:
         print('\n\033[33mAté a próxima...\033[m')
         break
-
