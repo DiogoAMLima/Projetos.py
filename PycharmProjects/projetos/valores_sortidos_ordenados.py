@@ -22,6 +22,7 @@ for chave, valor in jogo.items():  # .items = retorna uma lista com os dois valo
     print(f'\n{chave} tirou \033[36m{valor}\033[m')
     sleep(0.6)
 ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)  # Ordenar lista de dicionários
+
 print('\n\033[30mRANKING DOS JOGADORES\033[m')
 for i, v in enumerate(ranking):
     print(f'\n\033[97m{i+1}º\033[m lugar: {v[0]} com o valor sorteado de: \033[35m{v[1]}.\033[m')
