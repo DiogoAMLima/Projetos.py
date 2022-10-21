@@ -11,4 +11,4 @@ I'm currently studying python and i'm posting my codes to help everyone who need
         <li>Dictionaries</li>
         <li>Tuples</li>
         <li>List</li>
- </ul>  # Listas não ordenadas
+ </ul>
