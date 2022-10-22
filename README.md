@@ -12,4 +12,5 @@ I'm currently studying python and i'm posting my codes to help everyone who need
         <li>Tuples</li>
         <li>List</li>
         <li>Conditionals</li>
+        <li>Loops</li>
  </ul>
