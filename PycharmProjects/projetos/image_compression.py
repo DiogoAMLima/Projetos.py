@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Image Compression:
 
-image = imageio.imread(r'C:\Users\Pichau\PycharmProjects\projetos\Python.svg.png')
+image = imageio.imread('Python.svg.png')
 # Carregando imagem (imagem deve estar no mesmo diretório)
 A = image[:, :, 1]  # Array
 u, s, v = np.linalg.svd(A, full_matrices=0)  # Reconstruindo imagem
