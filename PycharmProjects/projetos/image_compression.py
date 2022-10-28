@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 image = imageio.imread('Python.svg.png')
 # Carregando imagem (imagem deve estar no mesmo diretório)
+# (Lembrando que você deve pegar sua imagem, colocar no mesmo diretório e colocar o nome dentro do imread())
 A = image[:, :, 1]  # Array
 u, s, v = np.linalg.svd(A, full_matrices=0)  # Reconstruindo imagem
 # U -> autovetor esquerdo || S -> array diagonal de valores singulares || V - > autovetor direito
