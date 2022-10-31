@@ -26,4 +26,3 @@ def neg_sub(n):  # Função com parâmetro
 
 valor2 = float(input('\nInforme um valor negativo: '))
 print(f'\nO resultado da subtração é: \033[35m{neg_sub(valor2)}\033[m')
-
