@@ -14,4 +14,6 @@ I'm currently studying python and i'm posting my codes to help everyone who need
         <li>Conditionals</li>
         <li>Loops</li>
         <li>File manipulation</li>
+        <li>Regex</li>
+        <li>Colors</li>
  </ul>
