@@ -1,8 +1,8 @@
 # Variaveis:
 
 character = str(input('Informe o nome do personagem: '))
-character2 = str(input('Informe o nome do personagem: '))
-character3 = str(input('Informe o nome do personagem: '))
+character2 = str(input('Informe o nome de outro personagem: '))
+character3 = str(input('Informe o nome de mais um personagem: '))
 
 limite = int(input('\nEscolha o tamanho da borda entre os totais de votos: '))
 
