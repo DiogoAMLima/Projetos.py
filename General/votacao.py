@@ -1,3 +1,5 @@
+# Votação:
+
 # Variaveis:
 
 character = str(input('Informe o nome do personagem: '))
