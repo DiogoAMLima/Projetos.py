@@ -12,3 +12,6 @@ print(emoji.emojize('\033[31mThe year is ending :calendar:\033[m'))  # Calendar
 print(emoji.emojize('\033[32mCheck :check_mark_button: and Check :check_mark:\033[m'))  # Check mark
 
 print(emoji.emojize('\033[34mCross mark :cross_mark: and Cross mark button :cross_mark_button:\033[m'))  # Cross mark
+
+# Todos os emojis demostrados acima, necessitam, começar e terminar com :
+# Também é crucial que estejam dentro de parentêses utilizando o emoji.emojize
