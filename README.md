@@ -16,4 +16,5 @@ I'm currently studying python and i'm posting my codes to help everyone who need
         <li>File manipulation</li>
         <li>Regex</li>
         <li>Colors</li>
+        <li>Rich</li>
  </ul>
