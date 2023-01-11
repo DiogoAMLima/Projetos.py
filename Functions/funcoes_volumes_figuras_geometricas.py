@@ -90,3 +90,22 @@ def vol_hemi_sphere():
 
 
 vol_hemi_sphere()
+
+
+def vol_ring():
+    print('\n\033[30;47mVOLUME OF RING\033[m')
+
+    pi_ring = 3.14
+
+    R = float(input('\nInforme o raio maior: '))
+
+    r = float(input('\nInforme o raio menor: '))
+
+    h_ring = float(input('\nInforme a altura da coroa: '))
+
+    vol_rg = pi_ring * h_ring * (R * R - r * r)
+
+    print(f'\nO volume da cora é: \033[37m{vol_rg:.2f}\033[m')
+
+
+vol_ring()
