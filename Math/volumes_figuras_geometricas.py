@@ -61,3 +61,17 @@ r_hsp = float(input('\nInforme o raio do semi-círculo: '))
 vol_hsp = (2 * pi_hsp * r_hsp * r_hsp * r_hsp) / 3
 
 print(f'\nO volume do semi-círculo é: \033[36m{vol_hsp:.2f}\033[m')
+
+print('\n\033[30;47mVOLUME OF RING\033[m')
+
+pi_ring = 3.14
+
+R = float(input('\nInforme o raio maior: '))
+
+r = float(input('\nInforme o raio menor: '))
+
+h_ring = float(input('\nInforme a altura da coroa: '))
+
+vol_ring = pi_ring * h_ring * (R * R - r * r)
+
+print(f'\nO volume da cora é: \033[37m{vol_ring:.2f}\033[m')
