@@ -12,7 +12,7 @@ def fibonacci(index):
 
 while True:
     try:
-        n = int(input('Deseja exibir até qual termo? '))
+        n = int(input('\nDeseja exibir até qual termo? '))
         print()
     except (ValueError, TypeError):
         print('\033[31mTivemos um problema com os tipos de dados que você digitou! '
