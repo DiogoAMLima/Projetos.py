@@ -1,8 +1,8 @@
-class CorpoHumano:
+class CorpoHumano:  # Definindo a classe corpo humano com a função init e as funções posteriores:
     def __init__(self):
         pass
 
-    def skin(self, pele):
+    def skin(self, pele):  # Definindo a função sobre pele
         self.pele = pele
         if cor_pele in 'branco branca':
             print(f'\nA pele é \033[97m{cor_pele}\033[m')
@@ -11,7 +11,7 @@ class CorpoHumano:
         else:
             print(f'\nA pele é {cor_pele}')
 
-    def nails(self, tamanho, cor):
+    def nails(self, tamanho, cor):  # Definindo a função sobre unhas
         self.tamanho = tamanho
         self.cor = cor
         if unha_cor in 'preto preta':
@@ -35,7 +35,7 @@ class CorpoHumano:
         else:
             print(f'\nO tamanho da unha é: \033[31m{unha_tamanho}\033[m e a cor é: {unha_cor}')
 
-    def hair(self, tamanho, cor, tipo):
+    def hair(self, tamanho, cor, tipo):  # Definindo a função sobre cabelo
         self.tamanho = tamanho
         self.cor = cor
         self.tipo = tipo
@@ -70,7 +70,7 @@ class CorpoHumano:
             print(f'\nO tamanho do cabelo é: \033[32m{cabelo_tamanho}\033[m, a cor do cabelo é: '
                   f'{cabelo_cor} e o tipo do cabelo é: \033[33m{cabelo_tipo}\033[m')
 
-    def eyes(self, cor):
+    def eyes(self, cor):  # Definindo a função sobre olhos
         self.cor = cor
         if olhos_cor in 'preto preta':
             print(f'\nA cor dos olhos é: \033[30m{olhos_cor}\033[m')
@@ -93,16 +93,16 @@ class CorpoHumano:
         else:
             print(f'\nA cor dos olhos é: {olhos_cor}')
 
-    def disease(self, doenca):
+    def disease(self, doenca):  # Definindo a função sobre doença
         self.doenca = doenca
         print(f'\nA doença do corpo é: \033[34m{doenca_corpo}\033[m')
 
-    def blood(self, tipo_sangue, fator_rh):
+    def blood(self, tipo_sangue, fator_rh):  # Definindo a função sobre tipo sanguíneo e fator RH
         self.tipo_sangue = tipo_sangue
         self.fator_rh = fator_rh
         print(f'\nO tipo sanguíneo é: \033[35m{tipo_sangue}\033[m e o fator rh é: \033[36m{fator_rh}\033[m')
 
-    def doacao_sangue(self):
+    def doacao_sangue(self):  # Definindo a função sobre doação de sangue
         self.msg = f'\n\033[31mNão existe este tipo sanguíneo...\033[m'
         juncao = sangue_tipo + fator_rh
         if juncao in 'A+':
@@ -131,14 +131,14 @@ class CorpoHumano:
                        f'e receber de: \03337[mO-\033[m'
         return self.msg
 
-    def verifica_tipo_sangue(self):
+    def verifica_tipo_sangue(self):  # Verificando o tipo sanguíneo
         print(f'\nSeu tipo sanguíneo é o: \033[34m{sangue_tipo}\033[m e fator RH: \033[35m{fator_rh}.\033[m '
               f'Preste atenção para quem pode doar e receber sangue...')
         print(self.doacao_sangue())
 
 
-while True:
-    try:
+while True:  # Laço de repetição para o/a usuário(a) informar as características para a classe corpo humano
+    try:  # Tratamento de erros
         cor_pele = str(input('\nInforme a cor da pele: ')).strip().lower()
         unha_tamanho = str(input('Informe o tamanho da unha: '))
         unha_cor = str(input('Informe a cor da unha: ')).strip().lower()
@@ -157,7 +157,7 @@ while True:
         res.disease(doenca_corpo)
         res.blood(sangue_tipo, fator_rh)
         res.verifica_tipo_sangue()
-    except (ValueError, KeyboardInterrupt):
+    except (ValueError, KeyboardInterrupt):  # Tratamento de erros
         print('\n\033[36mHouve um problema com o tipo de dado informado ou o usuário interrompeu a entrada de '
               'informações, tente novamente...\033[m')
     esc = str(input('\nDeseja continuar? [S/N]? ')).strip().upper()
