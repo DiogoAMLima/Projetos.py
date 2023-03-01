@@ -1,4 +1,4 @@
-class Funcionario:
+class Funcionario:  # Definindo a classe funcionário e suas repesctivas funções
     def __init__(self, nome):
         self.nome = nome
         print(f'\nO nome do funcionário é: \033[31m{nome_func}\033[m')
@@ -42,7 +42,7 @@ class Funcionario:
         print(self._aumenta_sal())
 
 
-while True:
+while True:  # Laço de repetição para o/a usuário(a) informar para a classe funcionário, junto de tratamento de erros
     try:
         nome_func = str(input('\nInforme o nome do funcionário: '))
         idade_func = int(input('Informe a idade do funcionário: '))
@@ -68,4 +68,4 @@ while True:
     else:
         print('\n\033[33mAté a próxima...\033[m')
         break
-
+        
