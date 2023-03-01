@@ -1,6 +1,6 @@
 # Classe com interação com o usuário:
 
-class Persoangem2:
+class Persoangem2:  # Definindo a classe e suas respectivas funções (métodos)
     def __init__(self, nome2):
         self.nome2 = nome2
         print(f'Seu personagem chama-se: \033[31m{self.nome2}\033[m')
