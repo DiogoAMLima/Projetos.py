@@ -23,7 +23,7 @@ per_idade = str(input('\033[33mInforme a idade do personagem:\033[m '))
 per_poder = str(input('\033[33mInforme o poder do personagem:\033[m '))
 per_bounty = float(input('\033[33mInforme a recompensa do personagem:\033[m '))
 
-valor = Persoangem2(per)
+valor = Persoangem2(per)  # Instânciando a classe
 valor.idade(per_idade)
 valor.poder(per_poder)
 valor.bounty(per_bounty)
