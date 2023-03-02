@@ -1,5 +1,7 @@
 import pandas as pd
 
+# Inicializando as listas:
+
 info1 = []
 info2 = []
 info3 = []
@@ -11,26 +13,28 @@ info8 = []
 
 while True:
     mar = str(input('\033[33mInforme a marca do PC:\033[m '))
-    info1.append(mar)
+    info1.append(mar)  # Adicionando a lista
     p = str(input('\033[33mInforme o processador do PC:\033[m '))
-    info2.append(p)
+    info2.append(p)  # Adicionando a lista
     volt = float(input('\033[33mInforme a voltagem da fonte do PC:\033[m '))
-    info3.append(volt)
+    info3.append(volt)  # Adicionando a lista
     me = str(input('\033[33mInforme a quantidade de memória do PC:\033[m '))
-    info4.append(me)
+    info4.append(me)  # Adicionando a lista
     p_l = str(input('\033[33mInforme a placa de vídeo do PC:\033[m '))
-    info5.append(p_l)
+    info5.append(p_l)  # Adicionando a lista
     v = str(input('\033[33mInforme o valor total do PC:\033[m '))
-    info6.append(v)
+    info6.append(v)  # Adicionando a lista
     arm = str(input('\033[33mInforme se o PC terá: HD / SSD / NVME:\033[m '))
-    info7.append(arm)
+    info7.append(arm)  # Adicionando a lista
     monitor_marca = str(input('\033[33mInforme a marca do monitor do PC:\033[m '))
-    info8.append(monitor_marca)
+    info8.append(monitor_marca)  # Adicionando a lista
     esc = str(input('Quer continuar? [S/N]? ')).upper()
     if esc not in 'S':
         break
     else:
         continue
+
+# Mostrando os resultados:
 
 print(f'\nA(s) marca(s) do(s) PC(s) é/são: \033[31m{info1}\033[m'
       f'\nO(s) processador(es) do(s) PC(s) é/são: \033[31m{info2}\033[m'
@@ -43,6 +47,8 @@ print(f'\nA(s) marca(s) do(s) PC(s) é/são: \033[31m{info1}\033[m'
 
 
 print()
+
+# Adicioanando a um DataFrame:
 
 dados = {'Marcas': info1, 'Processadores': info2, 'Fontes': info3, 'Memória': info4, 'Placas de vídeo': info5,
          'Valores totais': info6, 'Armazenamentos': info7, 'Marcas dos monitores': info8}
