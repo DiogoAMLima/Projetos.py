@@ -4,10 +4,14 @@ import openpyxl
 from openpyxl import Workbook
 import pathlib
 
+# Definindo as cores: 
+
 cor = '#99B2F5'
 cor2 = '#FFEF3A'
 cor3 = 'black'
 cor4 = 'white'
+
+# Inicializando a janela e alguns dados:
 
 janela = Tk()
 
@@ -22,7 +26,7 @@ op = int(input('Informe: '
                '\n3 para escolher qual linha cada palavra irá'
                '\nDigite sua opção: '))
 
-file = pathlib.Path('Palavras em Inglês.xlsx')
+file = pathlib.Path('Palavras em Inglês.xlsx')  # Verificando se o arquivo existe
 if file.exists():
     pass
 else:
@@ -59,6 +63,7 @@ else:
 
 
 def enviar():
+    # Pegando os valores:
     a = aValue.get()
     b = bValue.get()
     c = cValue.get()
