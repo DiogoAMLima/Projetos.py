@@ -1,5 +1,7 @@
 import pandas as pd
 
+# Declarando variáveis e inicializando listas:
+
 nomes = []
 idades = []
 sexo = []
@@ -7,16 +9,16 @@ cores = []
 m = 0
 f = 0
 
-while True:
-    try:
+while True:  # Laço de repetição
+    try:  # Tratamento de erros
         nome = str(input('\nInforme um nome para a coluna "Nomes": '))
-        nomes.append(nome)
+        nomes.append(nome)  # Adicionando a lista
         idade = str(input(f'Informe a idade do(a) {nome} para a coluna "Idades": '))
-        idades.append(idade)
+        idades.append(idade)  # Adicionando a lista
         cor = str(input(f'Informe a cor favorita do(a) {nome} para a coluna "Cores": ')).upper()
-        cores.append(cor)
+        cores.append(cor)  # Adicionando a lista
         s = str(input(f'Informe o sexo do(a) {nome} para a coluna "Sexo": [m/f] ')).upper()
-        sexo.append(s)
+        sexo.append(s)  # Adicionando a lista
         if s == 'M':
             m += 1
         elif s == 'F':
@@ -33,6 +35,7 @@ while True:
         print('\n\033[31mO usuário interrompeu a entrada de informações...\033[m')
         break
 
+# Verificando os resultados com o comando len:
 print(f'\nA lista contém \033[33m{len(nomes)}\033[m nome(s) e eles são por ordem de inserção: \033[34m{nomes}\033[m')
 print(f'\nA lista contém \033[34m{len(idades)}\033[m idade(s) e elas são por ordem de inserção: \033[33m{idades}\033[m')
 print(f'\nA lista contém \033[35m{len(sexo)}\033[m sexo(s) informados e '
@@ -41,6 +44,8 @@ print(f'\nA lista contém \033[35m{len(sexo)}\033[m sexo(s) informados e '
 print(f'\nA lista contém \033[31m{len(cores)}\033[m cor(es) e elas são por ordem de inserção: \033[31m{cores}\033[m')
 
 print()
+
+# Adicionando a um DataFrame
 
 dados = {'Nomes': nomes, 'Idades': idades, 'Cores': cores, 'Sexo': sexo}
 
