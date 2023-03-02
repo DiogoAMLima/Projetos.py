@@ -543,3 +543,6 @@ elif confronto == 7:
                 print('Mais sorte na próxima...')
     elif aleatorio_2 == 2:
         print('Seu time foi eliminado, \033[31mTENTE NA PRÓXIMA\033[m')
+
+# Escolhendo um time e colocando ele para disputar com outros com o objetivo de ser campeão.
+# Laços de repetição aninhados para fazermos as comparações entre os times para os confrontos.
