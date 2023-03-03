@@ -1,7 +1,8 @@
-def aumento_salario():
+def aumento_salario():  # Definindo a função com tratamento de erros
     try:
         s_a = float(input('Informe o valor do salário atual do funcionário: '))
         t_s = int(input('Informe o tempo que o funcionário trabalha na empresa: '))
+        # Condicionais para bonificação e aumento do salário
         if t_s <= 1:
             bonificao = 50
         elif t_s <= 2:
