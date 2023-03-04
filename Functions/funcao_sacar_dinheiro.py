@@ -1,11 +1,13 @@
-def sacar_dinheiro():
+def sacar_dinheiro():  # Inicializando a função
     print('Células disponíveis para saque: \033[97m50, 20, 10, 5, 2, 1\033[m\n')
     print('\033[31m-=\033[m' * 20)
     valor_saque = int(input('\nInforme o valor do saque: '))
     total = valor_saque
     ced = 50
     total_ced = 0
-    while True:
+    while True:  # Loop
+        # Condicional para verificação das cédulas que serão utilizadas, diminuimos o número da variável total para que
+        # possa ser utilizado outro valor da cédula
         if total >= ced:
             total -= ced
             total_ced += 1
