@@ -13,7 +13,7 @@ def verifica_primo():  # Inicializando a funçãp
             print('\n\033[31mNúmero é primo\033[m')
             print(f"\nApenas \033[36m{res}\033[m divisores")  # Mostrando a quantidade de divisores
         else:
-            print('\n\033[32mNúmero não é primo\033[m')
+            print('\n\033[32mNúmero não é primo\033[m')  # Mostrando a quantidade de divisores
             print(f"\n\033[36m{res} divisores\033[m")
     except (TypeError, ValueError, KeyboardInterrupt):
         print(
