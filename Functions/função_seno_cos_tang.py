@@ -4,7 +4,7 @@ def sen_cos_tan():  # Inicializando a função
     seno = sin(radians(angulo))  # Valor do ângulo
     cosseno = cos(radians(angulo))  # Valor do ângulo
     tangente = tan(radians(angulo))  # Valor do ângulo
-    print(f'O Seno, Cosseno e Tangente de \033[34m{angulo:.1f}\033[m são respectivamente: '
+    print(f'O Seno, Cosseno e Tangente de \033[34m{angulo:.1f}°\033[m são respectivamente: '
           f'\033[35m{seno:.2f}\033[m, \033[37m{cosseno:.2f}\033[m e \033[97m{tangente:.2f}\033[m')
 
 
