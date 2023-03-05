@@ -1,6 +1,6 @@
 from random import randint
 
-print('\033[31m—\033[31m' * 18, 'NÚMERO ALEATÓRIO', '\033[31m—\033[m' * 18, '\n')
+print('\033[31m—\033[m' * 18, '\033[97mNÚMERO ALEATÓRIO\033[m', '\033[31m—\033[m' * 18)
 
 i = 0
 pontos = 0
