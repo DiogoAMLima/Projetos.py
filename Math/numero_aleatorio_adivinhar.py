@@ -1,38 +1,34 @@
 from random import randint
-print('--------------------------------NÚMERO ALEATÓRIO--------------------------------')
 
-print('\n')
+print('\033[31m—\033[31m' * 18, 'NÚMERO ALEATÓRIO', '\033[31m—\033[m' * 18, '\n')
 
 i = 0
 pontos = 0
-while i < 3:
-    aleatorio = randint(1, 5)
-    numero = int(input("Informe o número que você acha que foi sorteado entre 1 e 5... "))
-    if numero == aleatorio:
-        print(f'Você acertou, {numero} = {aleatorio}')
+while i < 3:  # Laço de repetição
+    aleatorio = randint(1, 5)  # Número aleatório entre 1 e 5
+    numero = int(input("\nInforme o número que você acha que foi sorteado entre 1 e 5... "))
+    if numero == aleatorio:  # Verificando se o número escolhido é igual ao sorteado
+        print(f'\n\033[32mVocê acertou, número escolhido: {numero} = número sorteado: {aleatorio}\033[m')
         pontos += 1
-        print(f'Você ganhou um ponto e agora tem {pontos} ponto(s)')
+        print(f'\n\033[33mVocê ganhou um ponto e agora tem {pontos} ponto(s)\033[m')
     else:
-        print(f'Não foi dessa vez, {numero} != {aleatorio}')
+        print(f'\n\033[97mNão foi dessa vez, número escolhido: {numero} != número sorteado: {aleatorio}\033[m')
         pontos -= 1
-        print(f'Você perdeu um ponto e agora tem {pontos} ponto(s)')
+        print(f'\n\033[31mVocê perdeu um ponto e agora tem {pontos} ponto(s)\033[m')
 
-    print('\n')
-
-    aleatorio2 = randint(0, 10)
-    numero2 = int(input("Informe o número que você acha que foi sorteado entre 0 e 10... "))
-    if numero2 == aleatorio2:
-        print(f'Você acertou, {numero2} = {aleatorio2}')
+    aleatorio2 = randint(0, 10)  # Número aleatório entre 1 e 10
+    numero2 = int(input("\nInforme o número que você acha que foi sorteado entre 0 e 10... "))
+    if numero2 == aleatorio2:  # Verificando se o número escolhido é igual ao sorteado
+        print(f'\n\033[32mVocê acertou, número escolhido: {numero2} = número sorteado: {aleatorio2}\033[m')
         pontos += 1
-        print(f'Você ganhou um ponto e agora tem {pontos} ponto(s)')
+        print(f'\n\033[33mVocê ganhou um ponto e agora tem {pontos} ponto(s)\033[m')
     else:
-        print(f'Não foi dessa vez, {numero2} != {aleatorio2}')
+        print(f'\n\033[97[mNão foi dessa vez, número escolhido: {numero2} != número sorteado: {aleatorio2}\033[m')
         pontos -= 1
-        print(f'Você perdeu um ponto e agora tem {pontos} ponto(s)')
+        print(f'\n\033[31mVocê perdeu um ponto e agora tem {pontos} ponto(s)\033[m')
 
-    print('\n')
-    i += 1
+    i += 1  # Incremento da variável do looping
 
-print(f'Você terminou com {pontos} pontos')
+print(f'\n\033[34mVocê terminou com {pontos} pontos\033[m\n')
 
-print('----------------------------------------------------------------------------------')
+print('\033[35m—\033[m' * 45)  # Multiplicando o texto dentro de '', no caso é uma barra: —
