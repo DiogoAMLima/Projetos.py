@@ -1,5 +1,7 @@
 import numpy as np
 
+# O método do numpy .dot multiplicará os elementos dos vetores (também pode multiplicar os elementos do array)
+
 # v = [1, 2, 4]
 # v2 = [2, 1, 4]
 #
