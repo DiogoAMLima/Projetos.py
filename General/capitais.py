@@ -1,11 +1,11 @@
-def capitais(opcao):
-    print('\033[32mOPÇÕES ABAIXO...\033[m')
+def capitais(opcao):  # Inicializando a função com parâmetro
+    print('\n\033[32mOPÇÕES ABAIXO...\033[m')
     print("\n\033[34m(1) - Rio de Janeiro, (2) - São Paulo, (3) - Minas Gerais, (4) - Espírito Santo, "
           "\n(5) - Amazonas, (6) - Goiás, (7) - Acre, (8) - Rio Grande do Sul, (9) - Paraná, (10) - Santa Catarina, "
           "\n(11) - Rondônia, (12) - Roraima, (13) - Alagoas, (14) - Amapá, (15) - Maranhão, (16) - Bahia, "
           "\n(17) - Ceará, (18) - Pará, (19) - Piauí, (20) - Mato Grosso, (21) - Mato Grosso do Sul, (22) - Tocantins, "
           "\n(23) - Pernambuco, (24) - Rio Grande do Norte, (25) - Sergipe, (26) - Paraíba\033[m\n")
-    match opcao:
+    match opcao:  # Match case
         case 1:
             return 'Rio de Janeiro'
         case 2:
@@ -58,14 +58,13 @@ def capitais(opcao):
             return 'Aracaju'
         case 26:
             return 'João Pessoa'
-        case 27:
+        case 27:  # Caso escolha 27, encerra o código com a mensagem abaixo
             print('\033[31mAté a próxima...\033[m')
-        case _:
+        case _:  # Caso qualquer outro número, encerra o código com a mensagem abaixo
             print(f"\033[35mNúmero {opcao} inválido...\033[m\n")
 
 
+# Escolhendo a opção
 res = float(input('\033[33mInforme um número de 1 a 26 para saber a capital ou 27 para sair... \033[m'))
 
-
-print(capitais(res))
-
+print(f'\nA capital escolhida é: \033[35m{capitais(res)}\033[m')  # Utilizando a função com o parâmetro escolhido
