@@ -1,10 +1,10 @@
 print('————————————————————————\033[31m CARACTERES ESPECIAIS \033[m————————————————————————')
-print('\033[31mLembrando que os números devem ser digitados pelo teclado númerico (a direita das setas) no pc.\033[m\n')
-opcao = int(input('Digite uma opção entre 1 e 7: '))
-print()
-while True:
+print('\033[36mLembrando que os números devem ser digitados pelo teclado númerico (a direita das setas) no pc.\033[m\n')
+opcao = int(input('Digite uma opção entre 1 e 7: '))  # Escolhendo uma opção
+while True:  # Looping
+    # Verificando a opção escolhida
     if opcao == 1:
-        print('CARACTERES MONETÁRIOS:\n'
+        print('\nCARACTERES MONETÁRIOS:\n'
               '£ = ALT+0163 \n'
               '¥ = ALT+0165 \n'
               '¢ = ALT+0162 \n'
@@ -12,7 +12,7 @@ while True:
               '€ = ALT+0128 \n'
               '¤ = ALT+0164 ')
     elif opcao == 2:
-        print('SÍMBOLOS DIVERSOS:\n'
+        print('\nSÍMBOLOS DIVERSOS:\n'
               '© = ALT+0169 \n'
               '® = ALT+0174 \n'
               '§ = ALT+0167 \n'
@@ -20,12 +20,12 @@ while True:
               '□ = 25A1+ALT+X \n'
               '√ = 221A+ALT+X ')
     elif opcao == 3:
-        print('FRAÇÕES:\n'
+        print('\nFRAÇÕES:\n'
               '¼ = ALT+0188 \n'
               '½ = ALT+0189 \n'
               '¾ = ALT+0190 ')
     elif opcao == 4:
-        print('SÍMBOLOS DA MATEMÁTICA:\n'
+        print('\nSÍMBOLOS DA MATEMÁTICA:\n'
               '° = ALT+0176 \n'
               'º = ALT+0186 \n'
               '+ = ALT+43 \n'
@@ -40,7 +40,7 @@ while True:
               '] = ALT+93 \n'
               '∆ = 2206+ALT+X ')
     elif opcao == 5:
-        print('SÍMBOLOS DE PONTUAÇÃO:\n'
+        print('\nSÍMBOLOS DE PONTUAÇÃO:\n'
               '? = ALT+63 \n'
               '¿ = ALT+0191 \n'
               '! = ALT+33 \n'
@@ -64,7 +64,7 @@ while True:
               '; = ALT+59 \n'
               '} = ALT+125 ')
     elif opcao == 6:
-        print('SÍMBOLOS DIVERSOS:\n'
+        print('\nSÍMBOLOS DIVERSOS:\n'
               'Æ = ALT+0198 \n'
               'æ = ALT+0230 \n'
               'ß = ALT+0223 \n'
@@ -86,7 +86,7 @@ while True:
               'Ѩ = 0468+ALT+X \n'
               'Ѭ = 049C+ALT+X ')
     elif opcao == 7:
-        print('EMOJIS:\n'
+        print('\nEMOJIS:\n'
               '☺ = ALT+1 \n'
               '☻ = ALT+2 \n'
               '♥ = ALT+3 \n'
@@ -139,10 +139,10 @@ while True:
               '▄ = ALT+220 \n'
               '▀ = ALT+221 ')
     else:
-        print('Número incorreto...')
+        print('\n\033[31mNúmero incorreto...\033[m')
     resp = str(input('\nQuer continuar? [S/N] '))
     if resp in 'Nn':
-        print('\033[34mAté a próxima...\033[m')
-        break
+        print('\n\033[34mAté a próxima...\033[m')
+        break  # Acaba o looping
     else:
         opcao = int(input('\nDigite uma opção entre 1 e 7: '))
