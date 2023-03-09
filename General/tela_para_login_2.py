@@ -2,27 +2,27 @@ from PySimpleGUI import PySimpleGUI as sg
 
 # https://www.geeksforgeeks.org/themes-in-pysimplegui/ Olhar código sobre os temas
 
-sg.theme('Dark')
+sg.theme('Dark')  # Selecionando o tema
 
 layout_temas = [
     [sg.Text('Lista dos temas disponíveis a seguir...')],
     [sg.Text('Escolha um dos temas para pré-visualização')],
-    [sg.Listbox(values=sg.theme_list(),
+    [sg.Listbox(values=sg.theme_list(),  # Lista de temas
                 size=(20, 14),
                 key='———LISTA———',
                 enable_events=True)],
     # [sg.Button('Saída')]
 ]
 
-window = sg.Window('Lista de temas', layout_temas)
+window = sg.Window('Lista de temas', layout_temas)  # Lista de temas do layout
 
 while True:
     eventos, valores = window.read()
 
     if eventos in (None, 'Saída'):
         break
-    sg.theme(valores['———LISTA———'][0])
-    sg.popup_get_text(f'Este é o tema: {valores["———LISTA———"][0]}')
+    sg.theme(valores['———LISTA———'][0])  # Primeira posição da lista
+    sg.popup_get_text(f'Este é o tema: {valores["———LISTA———"][0]}')  # Mostrando como é o tema escoliho
     if eventos == sg.WIN_CLOSED:
         print('\n\033[32mAté a próxima...\033[m')
         break
