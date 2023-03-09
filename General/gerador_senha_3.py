@@ -28,3 +28,6 @@ while True:
             print(f'\033[34mSua senha é:\033[m \033[35m{senha}\033[m')
         except (ValueError, TypeError):
             print('Tivemos um problema com os tipos de dados que você digitou! Necessário que seja um número inteiro!')
+
+# Ler a documentação do gerador_senha_2
+# Adicionado apenas um looping para o/a usuário(a) escolher quando quiser parar
