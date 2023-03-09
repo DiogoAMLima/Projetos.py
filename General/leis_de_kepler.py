@@ -4,9 +4,7 @@ print('-> Fórmula da 3ª lei de kepler: Quadrado do  período de revolução de
       '\033[31m-> Quanto mais distante o planeta estiver do sol mais tempo levará para completar a translação.\033[m\n'
       '\033[33m-> T ao quadrado sobre r ao cubo igual a K -> K = (T**T) / (r**3)\033[m')
 
-print()
-
-print('\033[35mInformações sobre os planetas -> Período de revolução e raio de órbita:\n'
+print('\n\033[35mInformações sobre os planetas -> Período de revolução e raio de órbita:\n'
       'Planetas ||||| Período de revolução(T) ||||| Raio da órbita (r)\033[m\n'
       'Mercúrio:            0,241 anos               0,387 u.a.\n'
       'Vênus:               0,615 anos               0,723 u.a.\n'
