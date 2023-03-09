@@ -39,8 +39,8 @@ compras = ('Carne', 31.99,
            'Açúcar', 4.99,
            'Sal', 1.99)
 
-for compra in range(0, len(compras)):
-    if compra % 2 == 0:
+for compra in range(0, len(compras)):  # looping de 0 até o tamanho de compras
+    if compra % 2 == 0:  # Par
         print(f'{compras[compra]:.<20}', end='')  # 19 pontos entre o produto e o preço da esquerda para a direita
     else:
         print(f'R${compras[compra]:>6.2f}')  # Duas casas decimais com espaços entre o cifrão e o valor dos produtos
