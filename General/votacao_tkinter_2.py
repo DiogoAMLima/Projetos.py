@@ -1,12 +1,13 @@
 from tkinter import *
 from tkinter import messagebox
 
-votos_char, votos_char2, votos_char3 = 0, 0, 0
+votos_char, votos_char2, votos_char3 = 0, 0, 0  # Declarando as variáveis
 
 
 def verificar_voto():
+    global votos_char, votos_char2, votos_char3  # Declarando como globais para utilização dentor da função
     if nome.get() in lista:
-        print(f'\n\033[31m{nome.get()} recebeu um voto!!!\033[m\n')
+        print(f'\n\033[31m{nome.get()} recebeu um voto!!!\033[m\n')  # Pegando o resultado do nome com o .get()
         print('\033[97m—\033[m' * 27)
         if nome.get() == character:
             global votos_char
